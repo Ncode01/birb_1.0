@@ -1,0 +1,180 @@
+#sec-6 {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+
+  background-color: var(--dark-bg);
+  color: #fff;
+}
+
+#sec-6 h2 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+#sec-6 h3 {
+  font-size: 3rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+#sec-6 .aurora {
+  position: absolute;
+  top: 0;
+
+  transition: opacity 0.8s ease-in-out;
+}
+
+.topic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  width: 100%;
+
+  position: absolute;
+  inset: 0;
+  z-index: 45;
+  overflow: hidden;
+
+  transition: opacity 0.5s ease;
+}
+
+.tc-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.tc-img-c {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.nodes {
+  position: absolute;
+  bottom: 10%;
+  right: -5%;
+  width: 105%;
+}
+
+.dot {
+  position: absolute;
+  bottom: -5%;
+  right: 8%;
+  width: 70%;
+}
+
+.und-t {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 900px) {
+  #sec-6 h2 {
+    font-size: 4rem;
+  }
+
+  #sec-6 h3 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .tc-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .nodes {
+    width: auto;
+    height: 50vh;
+  }
+  .dot {
+    width: auto;
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nodes {
+    width: 105%;
+    height: auto;
+  }
+  .dot {
+    width: 110%;
+    height: auto;
+    right: -5%;
+    bottom: -30%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #sec-6 h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.bubble-container {
+  scale: 70%;
+  opacity: 0.5;
+  transform: translateY(100%);
+
+  transition: all 0.3s cubic-bezier(0, 1.03, 0.58, 1);
+}
+
+@keyframes bubble-up {
+  0% {
+    bottom: -20%;
+  }
+  20% {
+    bottom: 5%;
+  }
+  80% {
+    bottom: 5%;
+  }
+  100% {
+    bottom: -20%;
+  }
+}
+
+.bb-c {
+  position: fixed;
+  width: 100%;
+  bottom: -20%;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 100;
+}
+
+.bb-c .bubble {
+  box-shadow: 0px 0px 20px #00000030;
+}
+
+.b-1 {
+  animation: bubble-up 1.5s ease-in-out 0.5s 1 forwards normal;
+}
+
+.b-2 {
+  animation: bubble-up 1.5s ease-in-out 2s 1 forwards normal;
+}
+
+.b-3 {
+  animation: bubble-up 1.5s ease-in-out 3.5s 1 forwards normal;
+}
+
+.kitchen-img {
+  filter: brightness(80%);
+}
+
+.tc-4 h2 {
+  margin-bottom: 7%;
+
+  position: absolute;
+
+  transition: all 0.5s ease-in-out;
+}

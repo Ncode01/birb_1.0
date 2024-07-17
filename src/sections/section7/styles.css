@@ -1,0 +1,109 @@
+#sec-7 {
+  z-index: 50;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sec-7 h2 {
+  font-size: 10rem;
+  font-weight: 500;
+  color: var(--dark-heading);
+
+  position: relative;
+  z-index: 45;
+}
+
+#sec-7 .aurora {
+  position: absolute;
+  top: 0;
+
+  background-color: #fff;
+
+  transition: opacity 0.8s ease-in-out;
+
+  z-index: 40;
+
+  overflow: visible;
+}
+
+@media screen and (max-width: 1400px) {
+  #sec-7 h2 {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #sec-7 h2 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #sec-7 h2 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #sec-7 h2 {
+    font-size: 3rem;
+  }
+}
+
+.download-btn {
+  position: relative;
+  z-index: 45;
+
+  width: 13rem;
+  height: 3rem;
+
+  border-radius: 10px;
+
+  background-color: #fff;
+  outline: none;
+  border: none;
+
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  justify-items: center;
+  align-items: center;
+
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
+
+  cursor: pointer;
+
+  transition: all 0.2s linear;
+}
+
+.download-btn:hover {
+  box-shadow: 0px 0px 20px #00000021;
+}
+
+.download-btn img {
+  height: 1.5rem;
+}
+
+.download-btn span {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+
+  padding-left: 0.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 550px) {
+  .btn-container {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+}

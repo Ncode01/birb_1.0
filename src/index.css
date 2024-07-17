@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Raleway:wght@400;500;600&display=swap");
+
+:root {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --dark-bg: #121212;
+  --dark-heading: #4b4b4b;
+  --dark-para: #8c8c8c;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #686868;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dummy {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -5;
+
+  background-color: transparent;
+}
+
+.white-bg {
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.bg-dark {
+  position: relative;
+  background-color: var(--dark-bg);
+  z-index: 2;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.foreground,
+.background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foreground {
+  z-index: 1;
+}
+
+.background {
+  z-index: -1;
+}
+
+.footer-cropper {
+  overflow: hidden;
+  background-color: #fff;
+
+  position: relative;
+  z-index: 45;
+}
